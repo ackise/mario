@@ -1,0 +1,22 @@
+.logo_container {
+  width: 350px;
+  height: 99px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 176px 0 165px;
+}
+.navbar_logo {
+  cursor: pointer;
+  background: transparent;
+}
+.navbar_logo_pic{
+  width: 76px;
+  height: 99px;
+}
+
+.navbar_logo_name {
+  background: transparent;
+  width: 250px;
+  height: 30px;
+}

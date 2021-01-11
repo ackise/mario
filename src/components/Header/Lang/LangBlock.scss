@@ -1,0 +1,25 @@
+.language{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.nav_lang {
+    color: white;
+}
+
+@media(max-width:1023px){
+    .language{
+        display:none;
+    }
+  
+}
