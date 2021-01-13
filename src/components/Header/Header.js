@@ -9,7 +9,7 @@ const Header = () => {
     const [headerColor, setHeaderColor] = useState(false);
 
     const changeBackground = () => {
-        if (window.scrollY >= 100) {
+        if (window.scrollY >= 70) {
             setHeaderColor(true);
         } else {
             setHeaderColor(false);

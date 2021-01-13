@@ -1,3 +1,5 @@
+@import "../../vars";
+
 .language{
     display: flex;
     align-items: center;
@@ -17,7 +19,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: $textColor;
 
 }
 .nav_lang {

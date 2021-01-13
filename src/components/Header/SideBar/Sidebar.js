@@ -11,9 +11,9 @@ import {DomainName} from "../../../config";
 const Sidebar = () => {
     return (
         <div id="outer-container">
-        <Menu left pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } width={ '280px'}>
-            {/*<Logo />*/}
-            {/*<Divider/>*/}
+        <Menu left pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } width={ '278px'}>
+            <Logo />
+            <Divider/>
             <a className='menu-item' href='#'>Функционал</a>
             <a className='menu-item' href='#'>О нас</a>
             <a className='menu-item' href='#'>Контакты</a>
@@ -21,7 +21,7 @@ const Sidebar = () => {
             <a className='menu-item' href={`${DomainName}/sign-in`}>Войти</a>
             <a className='menu-item' href={`${DomainName}/sign-up`}>Регистрация</a>
             <Divider />
-            <LangBlockDesk style='language'/>
+            <LangBlockDesk style='language' selectStyle={true}/>
         </Menu>
         </div>
 

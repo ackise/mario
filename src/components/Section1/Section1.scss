@@ -1,4 +1,86 @@
-h1 {
+@import "../vars";
+
+.section1_wrapper {
   height: 100vh;
-  background: url("../../assets/img/background.svg");
+  width: 100vw;
+  background: url("../../assets/img/background.svg") no-repeat bottom ;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  padding: 132px 15px 0;
+
 }
+
+.section1_title {
+
+  & > h3 {
+    color: $maimTextColor;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  @media (min-width: 480px) {
+    padding: 15% 5% 5% 5%;
+  }
+
+}
+
+.section1_btn {
+  justify-self: center;
+  margin-top: 30px;
+}
+
+
+.sky_pic_1 {
+  display: none;
+  position: absolute;
+  height: 47.56px;
+  width: 60px;
+  left: 260px;
+  top: 381.61px;
+
+  //@media (min-width: 480px) {
+  //  display: none;
+  //}
+}
+
+.section1_bricks {
+  height: 60px;
+  width: 100%;
+  background: url("../../assets/img/briks.svg");
+  align-self: flex-end;
+}
+
+.sky_pic_2 {
+  display: none;
+  position: absolute;
+  height: 34.58px;
+  width: 43px;
+  left: 277.7px;
+  top: 197px;
+
+
+}
+
+.sky_pic_3 {
+  display: none;
+  position: absolute;
+  height: 25.56px;
+  width: 48.95px;
+  left: -19.95px;
+  top: 220px;
+}
+
+/// section1_wrapper2
+
+.section1_wrapper2 {
+  height: 931px;
+  width: 290px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #3365BF -62.38%, #88E4FD 127.72%);
+  margin: 15px auto;
+  display: grid;
+}
+

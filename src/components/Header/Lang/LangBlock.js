@@ -12,10 +12,6 @@ import {connect, useDispatch} from 'react-redux';
 const useStyles = makeStyles((theme) => ({
     formControl: {
         marginLeft: theme.spacing(1),
-        // minWidth: 50,
-        // marginRight: "30px",
-        // width: "54px",
-        // height: "24px"
     },
 
     selectEmpty: {
@@ -26,25 +22,22 @@ const useStyles = makeStyles((theme) => ({
         color:'white',
         fontSize: "15px",
         fontWeight: "400",
-
-        // width: "15px"
+    },
+    icon2: {
+            color:'#111111',
+            fontSize: "15px",
+            fontWeight: "400",
     },
     inputText: {
-        fontSize: "14px"
+        fontSize: "14px",
+        color:'#111111'
     }
 
 }));
 
-// const expand = () => {
-//     return (
-// <FcExpand color='white'/>
-//     )
-// }
-
-
 const SimpleSelect = (props)=> {
 
-    const {style,language} = props
+    const {style,language, selectStyle} = props
     const dispatch = useDispatch();
     const classes = useStyles();
 
@@ -55,24 +48,15 @@ const SimpleSelect = (props)=> {
     return (
         <div className = {style === 'language' ? 'language' : 'mobile'}>
             {style !== 'language' ? <p> Выберите язык:</p> : null}
-            <LanguageIcon className={classes.icon} />
+            <LanguageIcon className={selectStyle ? classes.icon2 : classes.icon}/>
             <FormControl className={classes.formControl}>
                 <Select
-                    className={classes.icon}
+                    className={selectStyle ? classes.icon2 : classes.icon}
                     disableUnderline
                     value={language}
                     onChange={handleChange}
                     IconComponent={ExpandMoreIcon}
-                    inputProps={{
-                        classes: {
-                            icon: classes.icon,
-                        },
-                    }}
-                    MenuProps = {{
-                        classes: {
-
-                        }
-                    }}
+                    inputProps={selectStyle ? {classes: {icon: classes.icon2}} : {classes: {icon: classes.icon}}}
                 >
                     <MenuItem value={"RU"}><p className={classes.inputText}>RU</p></MenuItem>
                     <MenuItem value={"UK"}><p className={classes.inputText}>UA</p></MenuItem>
@@ -82,7 +66,6 @@ const SimpleSelect = (props)=> {
         </div>
     );
 }
-
 
 
 const mapStateToProps = (state) => {

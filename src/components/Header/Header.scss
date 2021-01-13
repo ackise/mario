@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   position: fixed;
+  //top: 0;
+  //z-index: 999;
 
   &.active {
     background: linear-gradient(180deg, rgba(51,101,191,1) 0%, rgba(136,228,253,1) 76%);
