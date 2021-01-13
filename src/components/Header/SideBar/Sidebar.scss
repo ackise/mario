@@ -4,27 +4,24 @@
 .bm-burger-button {
     position: fixed;
     width: 24px;
-    height: 22px;
-    right: 15px;
-    top: 29px;
+    height: 20px;
+    right: 27px;
+    top: 30px;
   }
   #outer-container {
     width: 80%;
   }
- 
-  
 
   
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: linear-gradient(180deg, #3365BF -62.38%, #88E4FD 127.72%);  }
+    background: white;  }
   
   /* Color/shape of burger icon bars on hover*/
   .bm-burger-bars-hover {
   
-    background: linear-gradient(180deg, #3365BF -62.38%, #88E4FD 127.72%);
+    background: white;
 
-    
   }
   
   
@@ -34,14 +31,17 @@
   */
   .bm-menu-wrap {
     position: fixed;
-    height: 100%;
+    //height: 100%;
+
   }
   
   /* General sidebar styles */
   .bm-menu {
-    background: #ffffff;
+    //background: #ffffff;
+    background: #5090d4;
     font-size: 16px;
     line-height: 24px;
+    //height: 80vh;
   }
   
   /* Morph shape necessary with bubble or elastic */
@@ -52,6 +52,7 @@
   /* Wrapper for item list */
   .bm-item-list {
     padding: 0.8em;
+
   }
   
   /* Styling of overlay */
@@ -62,13 +63,14 @@
   /* Individual item */
 .bm-item {
     display: inline-block;
-    color: #212529;
+    color: white;
     margin-bottom: 20px;
     margin-top: 20px;
     text-align: left;
     text-decoration: none;
     transition: color 0.2s;
     outline: none;
+  padding-left: 15px;
   }
 
   
@@ -80,53 +82,64 @@
   }
   @media(min-width:320px){
     .bm-menu-wrap {
-      margin-left: -38%;
+      margin-left: -3%;
     }
 
   }
-  @media(min-width:360px){
-    .bm-menu-wrap {
-      margin-left: -37%;
-    }
-
-  }
-  @media(min-width:361px)and (max-width:425px){
-    .bm-menu-wrap {
-      margin-left: -37%;
-
-    }
-  }
-
-  @media(min-width:426px)and (max-width:768px){
-    .bm-menu-wrap {
-      margin-left: -32%;
-    }
-  }
-  @media(min-width:769px)and (max-width:1023px){
-    .bm-menu-wrap {
-      margin-left: -33%;
-
-    }
-    #outer-container {
-      width: 130%;
-    }
-  }
-
-
-  @media(min-width:1024px){
-   
+  //@media(min-width:360px){
+  //  .bm-menu-wrap {
+  //    //margin-left: -37%;
+  //  }
+  //
+  //}
+  //@media(min-width:361px)and (max-width:425px){
+  //  .bm-menu-wrap {
+  //    //margin-left: -37%;
+  //
+  //  }
+  //}
+  //
+  //@media(min-width:426px)and (max-width:768px){
+  //  .bm-menu-wrap {
+  //    //margin-left: -32%;
+  //  }
+  //}
+  @media(min-width:769px){
     .bm-burger-button{
       display: none;
     }
-   
+
     #outer-container {
       display: none;
     }
     .bm-menu-wrap {
       display: none;
     }
-   
+
+    //.bm-menu-wrap {
+    //  margin-left: -33%;
+    //
+    //}
+    //#outer-container {
+    //  width: 130%;
+    //}
   }
+
+
+  //@media(min-width:1024px){
+  //
+  //  .bm-burger-button{
+  //    display: none;
+  //  }
+  //
+  //  #outer-container {
+  //    display: none;
+  //  }
+  //  .bm-menu-wrap {
+  //    display: none;
+  //  }
+  //
+  //}
 
 
 
@@ -141,3 +154,7 @@
   // .bm-cross {
   //   background: #bdc3c7;
   // }
+
+.menu-item {
+  color: white;
+}

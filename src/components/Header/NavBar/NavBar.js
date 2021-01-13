@@ -2,13 +2,14 @@ import React, {useState, useEffect} from 'react';
 import { Link as LinkS } from 'react-scroll';
 import { Link as LinkR } from 'react-router-dom';
 import {animateScroll as scroll} from 'react-scroll';
+import MenuItems from './MenuItems';
 import "./NavBar.scss";
 
 const NavBar = ( ) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
-        if(window.scrollY >=80) {
+        if(window.scrollY >=100) {
             setScrollNav(true)
         } else {
             setScrollNav(false)
@@ -26,19 +27,16 @@ const NavBar = ( ) => {
     return (
         <div className='navbar_container'>
             <div className="nav menu">
-            <LinkS className='nav menu_item'>Функционал</LinkS>
-            <LinkS className='nav menu_item'>О Нас</LinkS>
-            <LinkS className='nav menu_item'>Контакты</LinkS>
+                {MenuItems.map((item, index) => {
+                    return (
+                <LinkS key={index} className={item.className} to={item.url}>{item.title}</LinkS>
+                    )
+                })}
             </div>
             <div className='nav btn_container'>
-               <LinkR className='nav header_link'>Bойти</LinkR>
-               <LinkR className='nav header_link'>
-                   <button className='nav_btn'>
-                   Регистрация
-                   </button>
-               </LinkR>
+               <LinkR className='nav menu_item'>Bойти</LinkR>
+               <LinkR className='nav header_btn'>Регистрация</LinkR>
             </div>
-
         </div>
     );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from './NavBar/NavBar'
 import Logo from "./Logo/logo";
 import LangBlock from "./Lang/LangBlock";
-// import Sidebar from "./SideBar/Sidebar";
+import Sidebar from "./SideBar/Sidebar";
 import './Header.scss';
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
             <Logo />
             <NavBar/>
             <LangBlock style='language'/>
-            {/*<Sidebar/>*/}
+            <Sidebar/>
         </div>
         </div>
 
