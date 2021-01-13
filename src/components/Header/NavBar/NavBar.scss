@@ -29,12 +29,12 @@
   text-decoration: none;
 
   @media (max-width: 1200px) {
-     font-size: 14px;
+    font-size: 14px;
   }
 
   @media (max-width: 768px) {
-      display: none;
-    }
+    display: none;
+  }
 
   &.menu {
     display: flex;
@@ -42,8 +42,8 @@
   }
 
   &.header_link, .menu_item {
-  outline: none;
-  cursor: pointer;
+    outline: none;
+    cursor: pointer;
   }
 
   &.btn_container {
